@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Vera mark">
+  <defs>
+    <linearGradient id="leaf" x1="36" y1="28" x2="84" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b8ffe6"/>
+      <stop offset=".45" stop-color="#57ffc0"/>
+      <stop offset="1" stop-color="#20c996"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="112" height="112" rx="30" fill="#07100e" stroke="#1b332d" stroke-width="1.2"/>
+  <path d="M60 17.5 96.5 38.5v43L60 102.5 23.5 81.5v-43L60 17.5Z" fill="none" stroke="#57ffc0" stroke-opacity=".32" stroke-width="1.5"/>
+  <path d="M60 35c14.5 7.2 16.2 20.9.4 35.4C44.6 55.9 45.8 42.2 60 35Z" fill="url(#leaf)" filter="url(#glow)"/>
+  <path d="M60 44v26M60 61l-8-7.3M60 68l8.8-7.2" fill="none" stroke="#04120e" stroke-width="1.7" stroke-linecap="round" stroke-opacity=".55"/>
+</svg>

@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 790" width="1400" height="790" role="img" aria-labelledby="title desc">
+  <title id="title">Vera system map</title>
+  <desc id="desc">A browser twin talks to an ESP8266 node over a LAN WebSocket or MQTT over secure WebSockets. The node keeps a local controller and failsafe.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08110f"/>
+      <stop offset=".55" stop-color="#060c0d"/>
+      <stop offset="1" stop-color="#081411"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="54" y1="0" x2="554" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#57ffc0" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#57ffc0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pinkLine" x1="846" y1="0" x2="1346" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8cc8" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ff8cc8" stop-opacity=".8"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="0" cy="0" r="1" gradientTransform="translate(260 280) scale(420)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#57ffc0" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#57ffc0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="0" cy="0" r="1" gradientTransform="translate(1150 430) scale(380)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8cc8" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#ff8cc8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#9fe9d0" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#57ffc0"/>
+    </marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#6fb7ff"/>
+    </marker>
+    <marker id="arrowP" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#ff8cc8"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="790" rx="28" fill="url(#bg)"/>
+  <rect width="1400" height="790" rx="28" fill="url(#grid)"/>
+  <rect width="1400" height="790" rx="28" fill="url(#glowL)"/>
+  <rect width="1400" height="790" rx="28" fill="url(#glowR)"/>
+  <rect x=".75" y=".75" width="1398.5" height="788.5" rx="27.25" fill="none" stroke="#1d312c" stroke-width="1.5"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="54" y="58" fill="#57ffc0" font-size="12" letter-spacing="3.4">VERA / SYSTEM MAP</text>
+    <text x="54" y="108" fill="#e6f4ee" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="39" font-weight="300" letter-spacing="-.5">One tab. One bed. One protocol.</text>
+    <text x="54" y="136" fill="#87a59d" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14.5">The browser is the supervisor. The ESP8266 is the safety layer.</text>
+  </g>
+
+  <g transform="translate(1116 38)">
+    <rect width="230" height="32" rx="16" fill="#0d1c18" stroke="#23443a"/>
+    <circle cx="17" cy="16" r="3.5" fill="#57ffc0"/>
+    <text x="29" y="20.5" fill="#a9c9c0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.3">NO BACKEND · NO ACCOUNT</text>
+  </g>
+
+  <!-- Browser panel -->
+  <g>
+    <rect x="54" y="168" width="500" height="486" rx="20" fill="#0a1513" stroke="#1d332d"/>
+    <rect x="54" y="168" width="500" height="2" rx="1" fill="url(#greenLine)"/>
+    <text x="80" y="204" fill="#57ffc0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="2.6">01 / BROWSER</text>
+    <text x="80" y="242" fill="#effaf5" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="27" font-weight="350">The twin</text>
+    <text x="80" y="266" fill="#76948c" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing=".6">WebGL 2 · Three.js r160 · one HTML file</text>
+    <line x1="80" y1="288" x2="528" y2="288" stroke="#1b2e29"/>
+
+    <g font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+      <circle cx="88" cy="319" r="4" fill="#57ffc0"/>
+      <text x="104" y="324" fill="#d9ece5" font-size="13.5">10 live metrics</text>
+      <text x="104" y="343" fill="#708f86" font-size="10.5">air · water · VPD · CO₂ · PAR · pH · EC · DO · level</text>
+
+      <circle cx="88" cy="383" r="4" fill="#b9f26b"/>
+      <text x="104" y="388" fill="#d9ece5" font-size="13.5">10 pieces of equipment</text>
+      <text x="104" y="407" fill="#708f86" font-size="10.5">lights · pumps · valves · dosing · chiller · vents · fans · shade</text>
+
+      <circle cx="88" cy="447" r="4" fill="#6fb7ff"/>
+      <text x="104" y="452" fill="#d9ece5" font-size="13.5">394 heads · 4 cameras</text>
+      <text x="104" y="471" fill="#708f86" font-size="10.5">scope to bed, row or plant · vision per head</text>
+
+      <circle cx="88" cy="511" r="4" fill="#ffb35c"/>
+      <text x="104" y="516" fill="#d9ece5" font-size="13.5">Deterministic simulation</text>
+      <text x="104" y="535" fill="#708f86" font-size="10.5">same clock, same inputs, same readings — no server</text>
+    </g>
+
+    <g transform="translate(80 571)">
+      <rect width="448" height="52" rx="12" fill="#08110f" stroke="#1a2d28"/>
+      <text x="16" y="22" fill="#9ab8b0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.1">NO COOKIES · NO ANALYTICS · NO DATABASE</text>
+      <text x="16" y="39" fill="#55756c" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5">static HTML · deterministic · private by default</text>
+    </g>
+  </g>
+
+  <!-- Link column -->
+  <g>
+    <text x="700" y="198" fill="#6fb7ff" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="2.8">LINK</text>
+    <text x="700" y="220" fill="#55756c" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9">telemetry ↑ · commands ↓</text>
+
+    <g transform="translate(592 246)">
+      <rect width="216" height="58" rx="12" fill="#0a1513" stroke="#1d3a44"/>
+      <text x="16" y="23" fill="#6fb7ff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.4">LAN</text>
+      <text x="16" y="41" fill="#c9e7f7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">WebSocket</text>
+      <text x="200" y="41" fill="#496d80" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9">ws://</text>
+    </g>
+    <g transform="translate(592 316)">
+      <rect width="216" height="58" rx="12" fill="#0a1513" stroke="#1d3a44"/>
+      <text x="16" y="23" fill="#6fb7ff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.4">HTTPS</text>
+      <text x="16" y="41" fill="#c9e7f7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">MQTT</text>
+      <text x="200" y="41" fill="#496d80" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9">wss://</text>
+    </g>
+
+    <!-- telemetry up -->
+    <path d="M566 424h104" stroke="#6fb7ff" stroke-width="1.4" stroke-dasharray="5 6" marker-end="url(#arrowB)" opacity=".85"/>
+    <text x="618" y="414" fill="#6fb7ff" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" letter-spacing="1">2 s TELEMETRY</text>
+    <!-- commands down -->
+    <path d="M838 474H682" stroke="#57ffc0" stroke-width="1.4" stroke-dasharray="5 6" marker-end="url(#arrowG)" opacity=".85"/>
+    <text x="760" y="464" fill="#57ffc0" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" letter-spacing="1">COMMANDS</text>
+
+    <g transform="translate(592 520)">
+      <rect width="216" height="72" rx="12" fill="#12100b" stroke="#4a3520"/>
+      <circle cx="18" cy="22" r="3.5" fill="#ffb35c"/>
+      <text x="30" y="26" fill="#ffb35c" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.1">FAILSAFE · 120 S</text>
+      <text x="16" y="45" fill="#b9a181" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10.5">No dashboard message → every</text>
+      <text x="16" y="60" fill="#b9a181" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10.5">control returns to automation.</text>
+    </g>
+    <text x="700" y="626" fill="#55756c" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9">same JSON on both links</text>
+  </g>
+
+  <!-- Node panel -->
+  <g>
+    <rect x="846" y="168" width="500" height="486" rx="20" fill="#0f1116" stroke="#3b2733"/>
+    <rect x="846" y="168" width="500" height="2" rx="1" fill="url(#pinkLine)"/>
+    <text x="872" y="204" fill="#ff8cc8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="2.6">02 / NODE</text>
+    <text x="872" y="242" fill="#f6eff3" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="27" font-weight="350">ESP8266</text>
+    <text x="872" y="266" fill="#927e89" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing=".6">one node · one deep-water bed</text>
+    <line x1="872" y1="288" x2="1320" y2="288" stroke="#2d2028"/>
+
+    <g font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+      <circle cx="880" cy="319" r="4" fill="#ff8cc8"/>
+      <text x="896" y="324" fill="#f0e4ea" font-size="13.5">Probes</text>
+      <text x="896" y="343" fill="#8d7982" font-size="10.5">pH · EC · DO · level · air T/RH · light · water T</text>
+
+      <circle cx="880" cy="383" r="4" fill="#ffb35c"/>
+      <text x="896" y="388" fill="#f0e4ea" font-size="13.5">Actuators</text>
+      <text x="896" y="407" fill="#8d7982" font-size="10.5">8-channel relay · dimmable LEDs · 3 peristaltic pumps</text>
+
+      <circle cx="880" cy="447" r="4" fill="#6fb7ff"/>
+      <text x="896" y="452" fill="#f0e4ea" font-size="13.5">Local controller</text>
+      <text x="896" y="471" fill="#8d7982" font-size="10.5">photoperiod · hysteresis · dosing interlocks</text>
+
+      <circle cx="880" cy="511" r="4" fill="#b9f26b"/>
+      <text x="896" y="516" fill="#f0e4ea" font-size="13.5">Comms-loss behaviour</text>
+      <text x="896" y="535" fill="#8d7982" font-size="10.5">manual overrides expire after 120 s · local control resumes</text>
+    </g>
+
+    <g transform="translate(872 571)">
+      <rect width="448" height="52" rx="12" fill="#0a0b0e" stroke="#2d2028"/>
+      <text x="16" y="22" fill="#cbb7c2" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" letter-spacing="1.1">VERIFIED BUILD · RAM 41.6 % · FLASH 45.3 %</text>
+      <text x="16" y="39" fill="#6d5a65" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5">PlatformIO · espressif8266 4.2.1 · NodeMCU v2</text>
+    </g>
+  </g>
+
+  <!-- Bottom stats -->
+  <g transform="translate(54 688)">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <g transform="translate(0 0)">
+        <rect width="200" height="58" rx="12" fill="#0a1513" stroke="#1d332d"/>
+        <text x="16" y="26" fill="#57ffc0" font-size="21" font-weight="500">42</text>
+        <text x="16" y="44" fill="#6f8f86" font-size="8.5" letter-spacing="1.1">SENSORS</text>
+      </g>
+      <g transform="translate(212 0)">
+        <rect width="200" height="58" rx="12" fill="#0a1513" stroke="#1d332d"/>
+        <text x="16" y="26" fill="#b9f26b" font-size="21" font-weight="500">10</text>
+        <text x="16" y="44" fill="#6f8f86" font-size="8.5" letter-spacing="1.1">LIVE METRICS</text>
+      </g>
+      <g transform="translate(424 0)">
+        <rect width="200" height="58" rx="12" fill="#0a1513" stroke="#1d332d"/>
+        <text x="16" y="26" fill="#ffb35c" font-size="21" font-weight="500">10</text>
+        <text x="16" y="44" fill="#6f8f86" font-size="8.5" letter-spacing="1.1">ACTUATORS</text>
+      </g>
+      <g transform="translate(636 0)">
+        <rect width="200" height="58" rx="12" fill="#0f1116" stroke="#3b2733"/>
+        <text x="16" y="26" fill="#ff8cc8" font-size="21" font-weight="500">4</text>
+        <text x="16" y="44" fill="#8d7982" font-size="8.5" letter-spacing="1.1">CAMERAS</text>
+      </g>
+      <g transform="translate(848 0)">
+        <rect width="200" height="58" rx="12" fill="#12100b" stroke="#4a3520"/>
+        <text x="16" y="26" fill="#ffb35c" font-size="21" font-weight="500">120 s</text>
+        <text x="16" y="44" fill="#9a856c" font-size="8.5" letter-spacing="1.1">FAILSAFE</text>
+      </g>
+      <g transform="translate(1060 0)">
+        <rect width="232" height="58" rx="12" fill="#0a1513" stroke="#1d332d"/>
+        <text x="16" y="26" fill="#e6f4ee" font-size="21" font-weight="500">0</text>
+        <text x="16" y="44" fill="#6f8f86" font-size="8.5" letter-spacing="1.1">SERVERS · TRACKERS</text>
+      </g>
+    </g>
+  </g>
+</svg>
