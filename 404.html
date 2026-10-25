@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>404 — Vera</title>
+<meta name="description" content="This page is not part of the Vera greenhouse twin." />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#050a0c" />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="/Vera/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/Vera/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/Vera/assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="/Vera/site.webmanifest" />
+<style>
+  :root{
+    --bg:#050a0c;
+    --ink:#eefff9;
+    --soft:rgba(222,244,237,.72);
+    --mute:rgba(190,225,214,.46);
+    --accent:#57ffc0;
+    --line:rgba(120,255,210,.16);
+    --sans:ui-sans-serif, system-ui, -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono:ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%}
+  body{
+    min-height:100svh;
+    display:grid;
+    place-items:center;
+    padding:32px;
+    background:
+      radial-gradient(ellipse 70% 65% at 50% 38%, #0b1c1b 0%, #050a0c 58%, #030607 100%);
+    color:var(--soft);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow:hidden;
+  }
+  body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.03;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.65'/%3E%3C/svg%3E");
+  }
+  main{
+    position:relative;
+    z-index:1;
+    width:min(560px, 100%);
+    text-align:center;
+  }
+  .mark{
+    width:58px;
+    height:58px;
+    margin:0 auto 28px;
+    display:block;
+    color:var(--accent);
+    filter:drop-shadow(0 0 22px rgba(87,255,192,.3));
+  }
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:var(--mute);
+  }
+  h1{
+    margin-top:16px;
+    font-size:clamp(64px, 16vw, 112px);
+    line-height:.88;
+    font-weight:250;
+    letter-spacing:-.06em;
+    color:var(--ink);
+  }
+  h1 span{color:var(--accent)}
+  p{
+    margin:24px auto 0;
+    max-width:42ch;
+    font-size:14px;
+    line-height:1.65;
+    color:var(--soft);
+  }
+  .actions{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:32px;
+  }
+  a{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    height:42px;
+    padding:0 20px;
+    border-radius:24px;
+    font-size:12.5px;
+    font-weight:600;
+    text-decoration:none;
+    transition:transform .2s ease, background .2s ease, box-shadow .2s ease;
+  }
+  a:active{transform:scale(.97)}
+  .primary{
+    color:#04140f;
+    background:var(--accent);
+    box-shadow:0 0 28px rgba(87,255,192,.28);
+  }
+  .primary:hover{box-shadow:0 0 36px rgba(87,255,192,.42)}
+  .ghost{
+    color:var(--soft);
+    background:rgba(255,255,255,.05);
+    box-shadow:inset 0 0 0 1px var(--line);
+  }
+  .ghost:hover{background:rgba(255,255,255,.08);color:var(--ink)}
+  a:focus-visible{outline:1px solid var(--accent);outline-offset:4px}
+  .foot{
+    margin-top:40px;
+    font-family:var(--mono);
+    font-size:9.5px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:rgba(190,225,214,.28);
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;animation:none !important}
+  }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+    <path d="M22 2.6 39 12.3v21.2L22 43.2 5 33.5V12.3L22 2.6Z" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+    <path d="M22 10.4c7.4 3.7 8.3 10.7.2 18.1-8.1-7.4-7.2-14.4-.2-18.1Z" fill="currentColor"/>
+    <path d="M22 15.2v17.4M22 24.2l-4.6-4.2M22 28.3l5.1-4.1" stroke="#04120e" stroke-width="1.1" stroke-linecap="round" opacity=".62"/>
+  </svg>
+  <div class="eyebrow">Vera · Off the map</div>
+  <h1>4<span>0</span>4</h1>
+  <p>This row doesn’t exist. Head back to the greenhouse and pick a bed from the layout map.</p>
+  <div class="actions">
+    <a class="primary" href="/Vera/">Enter the greenhouse</a>
+    <a class="ghost" href="https://github.com/Abhinav-Prabhakar/Vera">Source on GitHub</a>
+  </div>
+  <div class="foot">Deep-water culture · Bay 07</div>
+</main>
+</body>
+</html>

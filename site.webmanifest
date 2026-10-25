@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "Vera — Hydroponic Greenhouse Twin",
+  "short_name": "Vera",
+  "description": "Photoreal digital twin of a deep-water-culture hydroponic greenhouse.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone", "minimal-ui"],
+  "orientation": "landscape",
+  "background_color": "#050a0c",
+  "theme_color": "#050a0c",
+  "categories": ["productivity", "utilities", "education"],
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screens/overview.jpg",
+      "sizes": "1600x1000",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Greenhouse overview with live telemetry"
+    }
+  ]
+}
