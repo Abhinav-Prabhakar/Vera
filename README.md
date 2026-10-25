@@ -4,7 +4,7 @@
 
 **A photoreal, real-time digital twin of a deep-water-culture hydroponic greenhouse.**
 
-Ten live sensor streams, nine pieces of equipment you can actually drive, camera-based disease watch,
+Ten live sensor streams, ten pieces of equipment you can actually drive, camera-based disease watch,
 and an ESP8266 node that can take over the bed when the browser goes away.
 
 [**Open the live twin →**](https://abhinav-prabhakar.github.io/Vera/)
