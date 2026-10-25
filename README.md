@@ -9,6 +9,8 @@ and an ESP8266 node that can take over the bed when the browser goes away.
 
 [**Open the live twin →**](https://abhinav-prabhakar.github.io/Vera/)
 
+[![Deploy to GitHub Pages](https://github.com/Abhinav-Prabhakar/Vera/actions/workflows/pages.yml/badge.svg)](https://github.com/Abhinav-Prabhakar/Vera/actions/workflows/pages.yml)
+
 [![Vera — a glass greenhouse at golden hour with live telemetry overlaid](assets/og.jpg)](https://abhinav-prabhakar.github.io/Vera/)
 
 </div>
